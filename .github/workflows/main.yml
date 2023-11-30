@@ -21,6 +21,7 @@ jobs:
       uses: docker/setup-buildx-action@v2
     - name: Build and push
       run: |
-        docker build -t gagandeepthinknyx/gittest:latest .
+        docker build -t weilisue/intel:latest .
         docker images
+        docker push weilisue/intel:latest
     
