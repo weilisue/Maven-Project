@@ -23,5 +23,6 @@ jobs:
       run: |
         docker build -t weilisue/intel:maven .
         docker images
+        docker login --username weilisue --password ${{ secrets.DOCKER_PASS }}
         docker push weilisue/intel:maven
     
